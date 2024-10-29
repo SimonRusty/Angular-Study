@@ -37,4 +37,29 @@ main {
     font-size: 1.5rem;
     text-align: left;
   }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding-left: 1.5em;
+    }
+
+    li::before {
+      content: "𓆏";
+      font-size: 1em;
+      position: absolute;
+      left: 0; // Aligns bullet with the text
+      top: 50%;
+      transform: translateY(-50%); // Centers the bullet vertically
+    }
+  }
 }
