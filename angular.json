@@ -20,20 +20,19 @@
             "outputPath": "dist/angular-udemy",
             "index": "apps/angular-udemy/src/index.html",
             "browser": "apps/angular-udemy/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "apps/angular-udemy/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "apps/angular-udemy/src/favicon.ico",
+              "apps/angular-udemy/src/assets",
               {
                 "glob": "**/*",
-                "input": "apps/angular-udemy/public"
+                "input": "apps/angular-udemy/public",
+                "output": "/assets"
               }
             ],
-            "styles": [
-              "apps/angular-udemy/src/styles.scss"
-            ],
+            "styles": ["apps/angular-udemy/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -78,10 +77,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "apps/angular-udemy/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -90,9 +86,7 @@
                 "input": "apps/angular-udemy/public"
               }
             ],
-            "styles": [
-              "apps/angular-udemy/src/styles.scss"
-            ],
+            "styles": ["apps/angular-udemy/src/styles.scss"],
             "scripts": []
           }
         }
@@ -115,9 +109,7 @@
             "outputPath": "dist/angular-reference",
             "index": "apps/angular-reference/src/index.html",
             "browser": "apps/angular-reference/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "apps/angular-reference/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -126,9 +118,7 @@
                 "input": "apps/angular-reference/public"
               }
             ],
-            "styles": [
-              "apps/angular-reference/src/styles.scss"
-            ],
+            "styles": ["apps/angular-reference/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -173,10 +163,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "apps/angular-reference/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -185,9 +172,7 @@
                 "input": "apps/angular-reference/public"
               }
             ],
-            "styles": [
-              "apps/angular-reference/src/styles.scss"
-            ],
+            "styles": ["apps/angular-reference/src/styles.scss"],
             "scripts": []
           }
         }
